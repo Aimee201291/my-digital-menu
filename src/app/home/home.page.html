@@ -1,6 +1,13 @@
 <ion-content scrollEvents="true" (ionScroll)="onScroll($event)">
-  <div class="home-header">
-    <img class="header-img" src="assets/images/hamburguesa_background.jpg">
+  <div class="header-img-container">
+    <img class="header-img" src="assets/images/hamburguesa_background.jpg" />
+    <div class="logo-container">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="affiliate-name">
+      Reyes Burguer
+    </div>
   </div>
 
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
@@ -25,7 +32,7 @@
     </ion-col>
   </ion-row-->
 
-  <ion-row class="sticky-row">
+  <ion-row class="sticky-row" style="margin-top: 65px">
     <ion-col size="10">
       <ion-text class="ion-padding-start" color="medium"
       [ngClass]="{'location-visible': showLocationDetail, 'location-hidden': !showLocationDetail}">
