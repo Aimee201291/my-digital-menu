@@ -75,7 +75,7 @@ ion-searchbar {
 }
 
 .logo {
-  background-image: url("../../assets/images/logo.jpg");
+  background-image: url("../../assets/images/pizzalandia.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -108,6 +108,19 @@ ion-searchbar {
     font-size: 1.5rem;
   }
 }
+
+ion-menu-button .button-inner {
+  justify-content: flex-start !important;
+}
+
+/*@media (min-width: 600px) {
+  .columna1{
+    --ion-grid-columns: 1;
+  }
+  .columna2 {
+    --ion-grid-columns: 11;
+  }
+}*/
 
 /*ion-menu-button span.button-inner {
   justify-content: flex-start !important;
