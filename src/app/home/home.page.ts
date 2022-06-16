@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {IonContent} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+
+  @ViewChild(IonContent, { static: false }) content: IonContent;
+
   categories = [];
   highlights = [];
   featured = [];
@@ -55,5 +59,14 @@ export class HomePage implements OnInit {
   onScroll(ev) {
     const offset = ev.detail.scrollTop;
     this.showLocationDetail = offset > 50;
+  }
+
+  /*scrollToPoint(X, Y, Z) {
+    this.content.scrollToPoint(X, Y, Z);
+  }*/
+
+  scrollToLabel(label) {
+    var titleELe = document.getElementById(label);
+    this.content.scrollToPoint(0, titleELe.offsetTop - 50);
   }
 }
