@@ -61,12 +61,8 @@ export class HomePage implements OnInit {
     this.showLocationDetail = offset > 50;
   }
 
-  /*scrollToPoint(X, Y, Z) {
-    this.content.scrollToPoint(X, Y, Z);
-  }*/
-
-  scrollToLabel(label) {
-    var titleELe = document.getElementById(label);
+  scrollToLabel($event) {
+    var titleELe = document.getElementById($event);
     this.content.scrollToPoint(0, titleELe.offsetTop - 50);
   }
 }

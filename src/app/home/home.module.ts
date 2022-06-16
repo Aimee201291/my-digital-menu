@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
+import { MenuComponent } from '../menu/menu.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { SharedDirectivesModule } from '../directives/shared-directives.module';
@@ -13,8 +14,8 @@ import { SharedDirectivesModule } from '../directives/shared-directives.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SharedDirectivesModule
+    SharedDirectivesModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, MenuComponent]
 })
 export class HomePageModule {}
