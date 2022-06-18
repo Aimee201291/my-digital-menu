@@ -20,16 +20,14 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <ion-row class="sticky-row custom-margin" style="margin-top: 35px">
-    <ion-col size="2" size-xs="12" size-sm="12" size-md="12" size-lg="2" style="display: flex; align-items: center">
-      <ion-menu-button side="start" style="float: left" 
-      [ngClass]="{'location-visible': showLocationDetail, 'location-hidden': !showLocationDetail}">
+  <ion-row class="sticky-row custom-margin" style="margin-top: 25px">
+    <ion-col [ngClass]="{'location-visible-2': showLocationDetail, 'location-hidden-2': !showLocationDetail}" size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" style="align-items: center">
+      <ion-menu-button side="start" style="float: left">
       </ion-menu-button>
-      <ion-text class="" color="medium" style="padding-right: 10px"
-      [ngClass]="{'location-visible': showLocationDetail, 'location-hidden': !showLocationDetail}">
+      <ion-text class="" color="medium" style="padding-right: 10px">
       Pizzalandia</ion-text>
     </ion-col>
-    <ion-col size="10" size-xs="12" size-sm="12" size-md="12" size-lg="10" style="display: flex; align-items: center; padding: 0">
+    <ion-col size="12" size-xs="12" size-sm="12" size-md="12" size-lg="12" style="display: flex; align-items: center; padding: 0">
       <!--ion-text class="" color="medium" style="padding-right: 10px"
       [ngClass]="{'location-visible': showLocationDetail, 'location-hidden': !showLocationDetail}">
       Pizzalandia</ion-text-->

@@ -46,12 +46,22 @@ ion-searchbar {
 
 .location-visible {
   opacity: 1;
-  transition: .5s;
+  transition: .2s;
+}
+
+.location-visible-2 {
+  display: flex;
+  transition: .2s;
 }
  
 .location-hidden {
   opacity: 0;
-  transition: .5s;
+  transition: .2s;
+}
+
+.location-hidden-2 {
+  display: none;
+  transition: .2s;
 }
 
 .header-img {

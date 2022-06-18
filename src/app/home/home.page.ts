@@ -63,6 +63,6 @@ export class HomePage implements OnInit {
 
   scrollToLabel($event) {
     var titleELe = document.getElementById($event);
-    this.content.scrollToPoint(0, titleELe.offsetTop - 50);
+    this.content.scrollToPoint(0, titleELe.offsetTop - 120);
   }
 }
